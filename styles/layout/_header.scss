@@ -1,0 +1,10 @@
+@import "../utils/variables";
+
+.header{
+    display: flex;
+    justify-content: center;
+    &_logo {
+        font-family: $police-primary, cursive;
+        font-size: 40px;
+    }
+}

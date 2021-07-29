@@ -1,0 +1,8 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+
+body {
+    margin: 0;
+    font-family: $police-secondary
+}
