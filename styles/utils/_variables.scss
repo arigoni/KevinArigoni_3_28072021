@@ -4,10 +4,14 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
+$color-text: white;
 
 // Listes des polices du site
 $police-primary: 'Shrikhand', "Comic Sans MS", Georgia, sans-serif;
 $police-secondary: 'Roboto', Arial, Georgia, sans-serif;
+
+//Les marges
+$margin: 0;
 
 // Les breakpoints pour les media queries
 $breakpoints: (mobile: 768 px, tabletmin: 768px, tabletmax: 991px, desktopmin: 992px, desktopmax: 1199px);

@@ -1,6 +1,10 @@
 @import "./variables";
 @import "./functions";
 
+@mixin font {
+    font-family: $police-primary, cursive;
+}
+
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
