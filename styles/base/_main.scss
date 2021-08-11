@@ -1,7 +1,3 @@
-@import "../utils/variables";
-@import "../utils/functions";
-@import "../utils/mixins";
-
 body {
     @include fontsecondary;
     @include marginnull;

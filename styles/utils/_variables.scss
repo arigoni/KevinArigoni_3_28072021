@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
-// Listes de couleurs du site 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
+// Listes des couleurs du site 
+$color-primary: hsl(261, 61%, 60%);
+$color-secondary: hsl(317, 53%, 74%);
 $color-tertiary: #99E2D0;
+$background-primary: hsl(0, 0%, 95%);
 $color-text: white;
 
 // Listes des polices du site
@@ -15,4 +16,10 @@ $margin: 0;
 $padding: 1rem;
 
 // Les breakpoints pour les media queries
-$breakpoints: (mobile: 768 px, tabletmin: 768px, tabletmax: 991px, desktopmin: 992px, desktopmax: 1199px);
+$breakpoints: (
+    mobile: 768 px, 
+    tabletmin: 768px, 
+    tabletmax: 991px, 
+    desktopmin: 992px, 
+    desktopmax: 1199px
+);
