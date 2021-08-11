@@ -2,5 +2,6 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./base/main";
-@import "./layouts/header";
-@import "./layouts/footer";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/home.scss";

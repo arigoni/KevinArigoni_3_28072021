@@ -3,6 +3,6 @@
 @import "../utils/mixins";
 
 body {
-    margin: 0;
-    font-family: $police-secondary
+    @include fontsecondary;
+    @include marginnull;
 }
