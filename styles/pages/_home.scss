@@ -1,0 +1,154 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+@import "../base/main";
+@import "../composants/buttons";
+
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem $padding;
+    background-color: $background-primary_dark;
+    font-size: 1.2rem;
+    position: relative;
+    &_icon {
+      margin-right: 1rem;
+    } 
+    &_text {
+      font-weight: 700;
+    }
+  }
+
+.exploration {
+    padding: 2rem;
+    text-align: center;
+    background-color: $background-primary; 
+    &_title {
+      @include marginnull;
+    } 
+    &_subtitle {
+      font-weight: 300;
+      margin: 1.5rem 0;
+    } 
+    &_btn {
+      @include button(primary);
+    }
+  }
+
+.tuto {
+    padding: ( $padding + 1rem ) $padding;
+    &_title {
+      margin-top: 0;
+    } 
+    &_steps {
+      margin: 0;
+      padding: 0;
+      list-style: none; 
+      counter-reset: compteListe;
+      @media (min-width:64rem) {
+        display: flex;
+      }
+    } 
+    &_steps_list {
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      display: flex;
+      position: relative;
+        &::before {
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: -0.75rem;
+        }  
+        &:hover{
+            transition-duration: 0.25s;
+            background-color: $tutoColor-primary;
+        }
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    &_icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.bloc {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.blocs {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    &_img {
+      height: 12rem;
+      width: 100%;
+      border: transparent solid 0px;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover;
+    }
+    &_badge {
+      background-color: $color-tertiary;
+      color: darken($color-tertiary, 50%);
+      padding: 0.5rem;
+      border-radius: 0.125rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+    }
+    &_footer {
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    &_content {
+      flex: 1;
+    }
+    &_title {
+      margin: 0;
+      margin-bottom: 0.25rem;
+    }
+    &_subtitle {
+      margin: 0;
+    }
+    &_btn {
+      height: 2rem;
+      width: 2rem;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+}

@@ -14,12 +14,3 @@ $police-secondary: 'Roboto', Arial, Georgia, sans-serif;
 //Les marges
 $margin: 0;
 $padding: 1rem;
-
-// Les breakpoints pour les media queries
-$breakpoints: (
-    mobile: 768 px, 
-    tabletmin: 768px, 
-    tabletmax: 991px, 
-    desktopmin: 992px, 
-    desktopmax: 1199px
-);

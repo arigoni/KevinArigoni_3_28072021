@@ -17,21 +17,3 @@
 @mixin btn_header_hover{ 
     background: linear-gradient(to top, $btn-primary, $btn-secondary);
 }
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media all and (min-width: mag-get($breakpoints, tabletmin)) and (max-width: map-get($breakpoints, tabletmax)){
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media all and (min-width: mag-get($breakpoints, desktopmin)) and (max-width: map-get($breakpoints, desktopmax)){
-        @content;
-    }
-}

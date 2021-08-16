@@ -8,18 +8,18 @@
         margin: auto;
         position: relative;
     }    
-    &__logo {
+    &_logo {
         @include fontprimary;
         @include marginnull;
         color: $color-text;
         font-size: 1.2rem;
     }
-    &__list {
+    &_list {
       @include marginnull;
         list-style: none;
         padding: 0;
     }
-    &__listList {
+    &_listList {
         margin: 0.5rem 0;  
         &:first-child {
             margin-top: 0;
@@ -28,7 +28,7 @@
             margin-bottom: 0;
         }
     }
-    &__link {
+    &_link {
       color: $color-text;
       text-decoration: none;
   
@@ -36,7 +36,7 @@
         text-decoration: underline;
       }
     } 
-    &__icon {
+    &_icon {
       width: 1.2rem;
       margin-right: 0.5rem;
     }
