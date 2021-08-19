@@ -25,17 +25,184 @@
 
   <body>
     <!-- Header/En-tête -->
-    <header class="header">
+    <header class="header header_withArrow">
+      <a href="./index.html#restaurants"><i class="fas fa-arrow-left header_arrow"></i></a>
       <h1 class="header_logo">ohmyfood</h1>
     </header>
 
     <!-- Corps de la page -->
-    <main>
+    <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant A la Française" class="restaurantImg">
+    
+    <main class="menu container">
+      <!-- Le titre -->
+      <header class="menu_header">
+        <h2 class="menu_title">A la française</h2>
+        <!-- Le logo coeur like -->
+        <button class="menu_btn">
+          <i class="menu_like far fa-heart fa-2x"></i>
+        </button>
+      </header>
+
+      <!-- La partie des menus-->
+      <!-- La partie des entrées -->
+      <div class="submenus">
+        <section class="submenu">
+          <h3 class="submenu_title">Entrées</h3>
+
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Tartare de poulpe acidulé</h4>
+              <p class="menuGroup_description">Aux zestes d'orange</p>
+            </header>
+
+            <div class="menuGroup_price">25€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Velouté de légumes d'antan</h4>
+              <p class="menuGroup_description">Carotte, panais, topinambour</p>
+            </header>
+
+            <div class="menuGroup_price">35€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+    
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Soupe à l'oignon</h4>
+              <p class="menuGroup_description">Revisitée</p>
+            </header>
+
+            <div class="menuGroup_price">20€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+    
+        <!-- La partie plats -->
+        <section class="submenu">
+          <h3 class="submenu_title">Plats</h3>
+
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Coquilles Saint-Jacques</h4>
+              <p class="menuGroup_description">Accompagnées d'une purée de panais</p>
+            </header>
+
+            <div class="menuGroup_price">40€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Magret de canard</h4>
+              <p class="menuGroup_description">Et parmentier de pommes de terre</p>
+            </header>
+
+            <div class="menuGroup_price">35€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+    
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Pigeonneau d’Ille-et-Vilaine</h4>
+              <p class="menuGroup_description">Sur son lit de gnocchis aux légumes</p>
+            </header>
+
+            <div class="menuGroup_price">44€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+    
+        <!-- La partie des desserts-->
+        <section class="submenu">
+          <h3 class="submenu_title">Desserts</h3>
+
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Pétales de violettes glacés</h4>
+              <p class="menuGroup_description">Et purée de noisettes</p>
+            </header>
+
+            <div class="menuGroup_price">18€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Fondant au chocolat</h4>
+              <p class="menuGroup_description">Revisité</p>
+            </header>
+
+            <div class="menuGroup_price">22€</div>
+
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+    
+          <section class="menuGroup">
+            <header class="menuGroup_header">
+              <h4 class="menuGroup_title">Millefeuille croustillant</h4>
+              <p class="menuGroup_description">Myrtilles et pâte d’amande</p>
+            </header>
+
+            <div class="menuGroup_price">23€</div>
+            <div class="menuGroup_confirmation">
+              <div class="menuGroup_icon">
+                <i class="menuGroup_iconIcon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+  
+      <div class="commandBtn">
+        <button class="commandBtn_btn">Commander</button>
+      </div>
     </main>
 
     <!-- Footer/Pieds-de-page -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer_container">
         <span class="footer_logo">ohmyfood</span>
         <ul class="footer_list">
           <li class="footer_listList">

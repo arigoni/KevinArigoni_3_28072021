@@ -17,3 +17,8 @@
 @mixin btn_header_hover{ 
     background: linear-gradient(to top, $btn-primary, $btn-secondary);
 }
+
+@mixin display {
+    display: flex;
+    position: relative;
+}

@@ -1,43 +1,44 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
 
 .footer {
-    background-color: #353535;   
-    .container {
-        display: flex;
-        flex-direction: column;
-        max-width: 1280px;
-        margin: auto;
-        position: relative;
-    }    
-    &_logo {
-        @include fontprimary;
-        @include marginnull;
-        color: $color-text;
-        font-size: 1.2rem;
-    }
-    &_list {
-      @include marginnull;
-        list-style: none;
-        padding: 0;
-    }
-    &_listList {
-        margin: 0.5rem 0;  
-        &:first-child {
-            margin-top: 0;
-        }   
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &_link {
-      color: $color-text;
-      text-decoration: none;
-  
-      &:hover {
-        text-decoration: underline;
-      }
-    } 
-    &_icon {
-      width: 1.2rem;
-      margin-right: 0.5rem;
+  background-color: #353535; 
+  &_container {
+      display: flex;
+      flex-direction: column;
+      padding: $padding;
+  }      
+  &_logo {
+    @include fontprimary;
+    @include marginnull;
+    color: $color-text;
+    font-size: 1.2rem;
+    margin-bottom: $padding;
+  }
+  &_list {
+    @include marginnull;
+    list-style: none;
+    padding: 0;
+  }
+  &_listList {
+    margin: 0.5rem 0;  
+    &:first-child {
+      margin-top: 0;
+    }   
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+  &_link {
+    color: $color-text;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  } 
+  &_icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
