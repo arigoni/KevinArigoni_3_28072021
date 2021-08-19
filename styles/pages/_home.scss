@@ -56,6 +56,7 @@
         border-radius: 1.25rem;
         background-color: $background-secondary;
             &::before {
+              @include alignItem;
                 counter-increment: compteListe 1;
                 content: counter(compteListe) " ";
                 background: $color-primary;
@@ -64,8 +65,7 @@
                 border-radius: 100px;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                color: white;
+                color: $back-color;
                 position: absolute;
                 left: -0.75rem;
             }  
@@ -99,7 +99,7 @@
 }
 
 .blocs {
-    background-color: white;
+    background-color: $back-color;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;
@@ -124,8 +124,8 @@
     }
     &_footer {
         @include display;
+        @include alignItem;
         padding: 1rem;
-        align-items: center;
     }
     &_content {
         flex: 1;
@@ -138,13 +138,13 @@
         @include marginnull;
     }
     &_btn {
+      @include alignItem;
         height: 2rem;
         width: 2rem;
         background-color: transparent;
         border: transparent 0px solid;
         padding: 0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
     }
 }

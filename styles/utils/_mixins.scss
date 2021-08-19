@@ -10,6 +10,10 @@
     margin: $margin;
 }
 
+@mixin backgroundColor {
+    background-color: $back-color;
+}
+
 @mixin btn_header {
     background: linear-gradient(to top, $color-primary, $color-secondary);
 }
@@ -21,4 +25,8 @@
 @mixin display {
     display: flex;
     position: relative;
+}
+
+@mixin alignItem {
+    align-items: center;
 }

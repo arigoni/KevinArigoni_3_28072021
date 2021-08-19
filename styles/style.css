@@ -42,7 +42,7 @@ body {
 .footer_logo {
   font-family: "Shrikhand", "Comic Sans MS", Georgia, sans-serif, cursive;
   margin: 0;
-  color: white;
+  color: #FFFFFF;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .footer_link {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -129,7 +129,7 @@ body {
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -177,6 +177,7 @@ body {
 }
 
 .tuto_steps_list::before {
+  align-items: center;
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #865bd7;
@@ -185,8 +186,7 @@ body {
   border-radius: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
+  color: #FFFFFF;
   position: absolute;
   left: -0.75rem;
 }
@@ -222,7 +222,7 @@ body {
 }
 
 .blocs {
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
@@ -252,8 +252,8 @@ body {
 .blocs_footer {
   display: flex;
   position: relative;
-  padding: 1rem;
   align-items: center;
+  padding: 1rem;
 }
 
 .blocs_content {
@@ -270,13 +270,13 @@ body {
 }
 
 .blocs_btn {
+  align-items: center;
   height: 2rem;
   width: 2rem;
   background-color: transparent;
   border: transparent 0px solid;
   padding: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -296,13 +296,13 @@ body {
 }
 
 .header_arrow {
+  align-items: center;
   position: absolute;
   left: 2rem;
   height: 2rem;
   width: 2rem;
   top: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
   transform: translateY(-50%);
   font-size: 1.2rem;
@@ -325,9 +325,9 @@ body {
 }
 
 .menu_header {
+  align-items: center;
   padding: 1rem 2rem 0 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -336,16 +336,16 @@ body {
 }
 
 .menu_btn {
+  display: flex;
+  position: relative;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   background-color: transparent;
   border: transparent 0px solid;
   padding: 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  background-color: black;
+  background-color: #000000;
 }
 
 .menu_btn:hover::before {
@@ -365,6 +365,8 @@ body {
 }
 
 .menu_like {
+  align-items: center;
+  background-color: #FFFFFF;
   transition-duration: .25s;
   background-color: #f6f6f6;
   position: absolute;
@@ -411,7 +413,7 @@ body {
 }
 
 .menuGroup {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -452,11 +454,11 @@ body {
 }
 
 .menuGroup_confirmation {
+  align-items: center;
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   display: flex;
-  align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
 }
@@ -466,11 +468,11 @@ body {
 }
 
 .menuGroup_icon {
+  align-items: center;
+  background-color: #FFFFFF;
   height: 1.6rem;
   width: 1.6rem;
-  background-color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 100px;
   transform: rotate(180deg);
@@ -499,7 +501,7 @@ body {
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
