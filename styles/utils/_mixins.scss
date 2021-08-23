@@ -30,3 +30,9 @@
 @mixin alignItem {
     align-items: center;
 }
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

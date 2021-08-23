@@ -15,6 +15,7 @@
     } 
     &_text {
       font-weight: 700;
+      margin: 0;
     }
   }
 
@@ -36,43 +37,48 @@
 
 .tuto {
     padding: ( $padding + 1rem ) $padding;
+    @include desktop {
+      .tuto_steps li {
+        display: inline;
+      }
+      .tuto_steps {
+        text-align: center;    
+      }
+    }
     &_title {
       margin-top: 0;
     } 
     &_steps {
-        @include marginnull;
-        padding: 0;
-        list-style: none; 
-        counter-reset: compteListe;
-        @media (min-width:64rem) {
-        display: flex;
-      }
+      @include marginnull;
+      padding: 0;
+      list-style: none; 
+      counter-reset: compteListe;
     } 
     &_steps_list {
-        @include display;
-        padding: 1.5rem;
-        margin: 1rem 0 1rem 0.75rem;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-        border-radius: 1.25rem;
-        background-color: $background-secondary;
-            &::before {
-              @include alignItem;
-                counter-increment: compteListe 1;
-                content: counter(compteListe) " ";
-                background: $color-primary;
-                height: 1.5rem;
-                width: 1.5rem;
-                border-radius: 100px;
-                display: flex;
-                justify-content: center;
-                color: $back-color;
-                position: absolute;
-                left: -0.75rem;
-            }  
-            &:hover{
-                transition-duration: 0.25s;
-                background-color: $tutoColor-primary;
-            }
+      @include display;
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: $background-secondary;
+      &::before {
+        @include alignItem;
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        background: $color-primary;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        color: $back-color;
+        position: absolute;
+        left: -0.75rem;
+      }  
+      &:hover{
+        transition-duration: 0.25s;
+        background-color: $tutoColor-primary;
+      }
     }
     &:first-child {
         margin-top: 0;

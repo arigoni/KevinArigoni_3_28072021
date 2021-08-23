@@ -4,6 +4,15 @@
 
 .footer {
   background-color: #353535; 
+  @include desktop {
+    .footer_list li {
+      display: inline-flex;
+    }
+    .footer_list {
+      text-align: center;
+      margin-right: 5 px;
+    }
+  }
   &_container {
       display: flex;
       flex-direction: column;
@@ -29,6 +38,7 @@
     &:last-child {
       margin-bottom: 0;
     }
+    
   }
   &_link {
     color: $color-text;
