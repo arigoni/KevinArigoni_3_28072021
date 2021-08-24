@@ -540,14 +540,17 @@ body {
   padding: 2rem 1rem;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .tuto .tuto_steps li {
     display: inline;
     margin-right: 50px;
-    margin-bottom: 50px;
   }
   .tuto .tuto_steps {
     text-align: center;
+  }
+  .tuto ol {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 

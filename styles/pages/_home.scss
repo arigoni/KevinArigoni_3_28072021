@@ -37,13 +37,17 @@
 
 .tuto {
     padding: ( $padding + 1rem ) $padding;
-    @include desktop {
+    @include desktop1 {
       .tuto_steps li {
         display: inline;
         margin-right: 50px;
       }
       .tuto_steps {
         text-align: center;  
+      }
+      ol {
+        margin-top: 30px;
+        margin-bottom: 20px;
       }
     }
     &_title {
