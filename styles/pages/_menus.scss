@@ -84,6 +84,10 @@
   overflow: hidden;
   cursor: pointer;
   max-width: 100%; 
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-fill-mode: both;
+  transform: scale(0);
   &_header {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -137,6 +141,13 @@
   } 
   &_iconIcon {
     color: $color-tertiary;
+  }
+}
+
+// Chargement du menu en décalé
+@for $i from 0 to 10 {
+  .delay-#{$i} {
+    animation-delay:  #{$i/10}s;
   }
 }
 

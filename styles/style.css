@@ -71,6 +71,15 @@
   }
 }
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .loader {
   position: fixed;
   height: 100%;
@@ -902,6 +911,10 @@ body {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
 
 .menuGroup_header {
@@ -965,6 +978,46 @@ body {
 
 .menuGroup_iconIcon {
   color: #99E2D0;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-delay: 0.9s;
 }
 
 .commandBtn {
