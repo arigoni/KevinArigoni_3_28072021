@@ -7,6 +7,7 @@
   @include desktop {
     .footer_list li {
       display: inline-flex;
+      padding-right: 50px;
     }
     .footer_list {
       text-align: center;
