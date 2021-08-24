@@ -143,14 +143,4 @@
     &_subtitle {
         @include marginnull;
     }
-    &_btn {
-      @include alignItem;
-        height: 2rem;
-        width: 2rem;
-        background-color: transparent;
-        border: transparent 0px solid;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
 }
