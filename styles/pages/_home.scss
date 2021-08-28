@@ -5,19 +5,29 @@
 @import "../composants/buttons";
 
 .local {
-    @include display;
-    justify-content: center;
-    padding: 1.25rem $padding;
+  @include display;
+  justify-content: center;
+  padding: 1.25rem $padding;
+  background-color: $background-primary_dark;
+  font-size: 1.2rem;
+  &_icon {
+    margin-right: 1rem;
+  } 
+  &_input {
     background-color: $background-primary_dark;
-    font-size: 1.2rem;
-    &_icon {
-      margin-right: 1rem;
-    } 
-    &_text {
-      font-weight: 700;
-      margin: 0;
+    border: none;
+    box-sizing: border-box;
+    width: 14rem;    
+    font-size: 1.4rem;
+    font-weight: bold;
+    &::placeholder {
+      color: rgb(36, 36, 36);
+    }
+    &:focus {
+      outline: 0;
     }
   }
+}
 
 .exploration {
     padding: 2rem;

@@ -493,9 +493,21 @@ body {
   margin-right: 1rem;
 }
 
-.local_text {
-  font-weight: 700;
-  margin: 0;
+.local_input {
+  background-color: #d9d9d9;
+  border: none;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.local_input::placeholder {
+  color: #242424;
+}
+
+.local_input:focus {
+  outline: 0;
 }
 
 .exploration {
