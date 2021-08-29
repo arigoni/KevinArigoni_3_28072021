@@ -42,3 +42,21 @@
         @content;
     }
 }
+
+@mixin laptop {
+    @media all and (min-width: map-get($breakpoints, laptop)) and (max-width: map-get($breakpoints, laptop1)) {
+        @content;
+    }
+}
+
+@mixin tel {
+    @media screen and (max-width: map-get($breakpoints, tel)) {
+        @content;
+    }
+}
+
+@mixin microtel {
+    @media screen and (max-width: map-get($breakpoints, microtel)) {
+        @content;
+    }
+}

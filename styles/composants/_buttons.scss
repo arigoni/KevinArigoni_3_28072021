@@ -9,6 +9,9 @@
     cursor: pointer;
     transition-duration: 0.25s;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25); 
+    .exploration_btnmicro {
+      display: none;
+    }
     &:hover {
         @include btn_header_hover;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
@@ -16,6 +19,23 @@
     a {
         text-decoration: none;
         color: inherit;
+    }
+    @include tel {
+      font-weight: bolder;
+      font-size: 0.7rem;
+    }
+    @include microtel {
+      display: flex;
+      justify-content: center;
+      color: $color-text;
+      cursor: pointer;
+      transition-duration: 0.25s;
+      .exploration_btntext {
+        display: none;
+      }
+      .exploration_btnmicro {
+        display: block;
+      }
     }
 }
 

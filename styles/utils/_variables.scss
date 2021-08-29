@@ -20,6 +20,10 @@ $padding: 1rem;
 
 // Les breakpoints
 $breakpoints: (
+    tel: 310px,
+    microtel: 236px,
     desktop: 900px,
-    desktop1: 1000px
+    desktop1: 1000px,
+    laptop: 350px,
+    laptop1: 999px,
 );
